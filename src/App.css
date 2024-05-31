@@ -10,7 +10,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.barcode-def {
+  height: 45.354330709px;
+  width: 139.84251969px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
