@@ -45,15 +45,15 @@ function App() {
     }
   };
 
-  const handleDownload = () => {
-    const url = window.URL.createObjectURL(new Blob([Uint8Array.from(atob(barcodeData.pdfBase64), (c) => c.charCodeAt(0))]));
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'barcode.pdf';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
+  // const handleDownload = () => {
+  //   const url = window.URL.createObjectURL(new Blob([Uint8Array.from(atob(barcodeData.pdfBase64), (c) => c.charCodeAt(0))]));
+  //   const a = document.createElement('a');
+  //   a.href = url;
+  //   a.download = 'barcode.pdf';
+  //   document.body.appendChild(a);
+  //   a.click();
+  //   document.body.removeChild(a);
+  // };
 
   const generatePdf = () => {
     const opt = {
