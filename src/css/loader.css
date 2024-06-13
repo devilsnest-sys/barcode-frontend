@@ -1,0 +1,60 @@
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loader-container {
+    background: #000000bd;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    content: '';
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+}
+.label-card {
+    width: 174px; /* Sticker width */
+    height: 132px; /* Sticker height */
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px; /* Adjust as needed to fit two stickers per row */
+  }
+  
+  .label-content {
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .label-description {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'DIN', sans-serif;
+  }
+  
+  .label-barcode {
+    height: 45.354px; /* Adjust as needed */
+    width: 139.843px; /* Adjust as needed */
+  }
+
+  
+  
+  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
